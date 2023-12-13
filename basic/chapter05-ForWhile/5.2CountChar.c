@@ -5,10 +5,21 @@ int main() {
   char c;
 
   printf("Enter a line of chars: ");
-  for (c = getchar(); c != '\n';) {
-    if (c ) {
-    
+  while ((c = getchar()) != '\n') {
+    if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')) {
+      enCount++;
+    } else if (c == ' ') {
+      spaceCount++;
+    } else if (c >= '0' && c <= '9') {
+      numCount++;
+    } else {
+      otherCount++;
     }
   }
+
+  printf("enCount = %d\n", enCount);
+  printf("spaceCount = %d\n", spaceCount);
+  printf("numCount = %d\n", numCount);
+  printf("otherCount = %d\n", otherCount);
   return 0;
 }
