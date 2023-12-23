@@ -9,28 +9,28 @@
 void show_n_char(char ch, int num);
 
 int main() {
-  int spaces;
+    int spaces;
 
-  show_n_char('*', WIDTH);
-  putchar('\n');
-  show_n_char(SPACE, 12);
-  printf("%s\n", NAME);
-  spaces = (WIDTH - strlen(ADDRESS)) / 2;
+    show_n_char('*', WIDTH);
+    putchar('\n');
+    show_n_char(SPACE, 12);
+    printf("%s\n", NAME);
+    spaces = (WIDTH - strlen(ADDRESS)) / 2;
 
-  show_n_char(SPACE, spaces);
-  printf("%s\n", ADDRESS);
-  show_n_char(SPACE, (WIDTH - strlen(PLACE)) / 2);
+    show_n_char(SPACE, spaces);
+    printf("%s\n", ADDRESS);
+    show_n_char(SPACE, (WIDTH - strlen(PLACE)) / 2);
 
-  printf("%s\n", PLACE);
-  show_n_char('*', WIDTH);
-  putchar('\n');
+    printf("%s\n", PLACE);
+    show_n_char('*', WIDTH);
+    putchar('\n');
 
-  return 0;
+    return 0;
 }
 
 void show_n_char(char ch, int num) {
-  int count;
-  for (int count = 1; count <= num; count++) {
-    putchar(ch);
-  }
+    int count;
+    for (int count = 1; count <= num; count++) {
+        putchar(ch);
+    }
 }
