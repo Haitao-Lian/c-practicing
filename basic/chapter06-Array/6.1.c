@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
 int main() {
+    // a test
     double scores[10], sum = 0;
     printf("Enter ten scores(use space to split): ");
     for (int i = 0; i < 10; i++) {
