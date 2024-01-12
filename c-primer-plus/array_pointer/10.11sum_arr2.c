@@ -10,7 +10,9 @@ int main() {
     answer1 = sump(marbles, marbles + SIZE);
 
     printf("1. total number: %ld\n", answer);
+    // printf("p of total 1 = %p\n", &answer);
     printf("2. total number: %ld\n", answer1);
+    // printf("p of total 2 = %p\n", &answer1);
 
     return 0;
 }
@@ -33,7 +35,15 @@ long sump(int *start, int *end) {
     while (start < end) {
         total += *start++;
     }
-    printf("address of end:   %p\n", end);
+    // printf("address of end:   %p\n", end);
+    // printf("start-2 = %d\n", *(start-2));
+    // printf("start-1 = %d\n", *(start-1));
+    // printf("start = %d\n", *start);
+    // printf("start + 1 = %p\n", start+1);
+    // printf("start+1 = %d\n", *(start+1));
+    // printf("start = %d\n", start[0]);
+    // printf("start + 2 = %p\n", start+2);
+    // printf("start+2 = %d\n", *(start+2));
 
     return total;
 }
