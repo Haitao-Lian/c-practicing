@@ -1,3 +1,11 @@
-*.bak
+*
 
-.clang-format
+!*.c
+!*.h
+!*.md
+
+!*/
+
+# *.bak
+# 
+# .clang-format
