@@ -32,6 +32,9 @@ int main()
 
     printf("\nsubtracting one pointer from another\n");
     printf("ptr2 = %p, ptr1 = %p, ptr2 - ptr1 = %td\n", ptr2, ptr1, ptr2 - ptr1);
+    printf("ptr2 = %p, ptr1 = %p, ptr1 - ptr2 = %td\n", ptr2, ptr1, ptr1 - ptr2);
+    printf("ptr3 = %p, ptr1 = %p, ptr1 - ptr3 = %td\n", ptr3, ptr1, ptr1 - ptr3);
+    printf("ptr3 = %p, ptr1 = %p, ptr3 - ptr1 = %td\n", ptr3, ptr1, ptr3 - ptr1);
 
     printf("\nsubtracting an int from a pointer:\n");
     printf("ptr3 = %p, ptr3 - 2 = %p\n", ptr3, ptr3 - 2);
