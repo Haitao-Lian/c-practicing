@@ -46,7 +46,7 @@ void copy_ptrs(double *tarr, double *sarr, double *end) {
 }
 
 void pri_arr(double *arr, int len) {
-    printf("Traverse arrays:\n");
+    printf("\nTraverse arrays:\n");
     for (int i = 0; i < len; i++)
-        printf("%5.2f\n", arr[i]);
+        printf("%5.2f ", arr[i]);
 }
