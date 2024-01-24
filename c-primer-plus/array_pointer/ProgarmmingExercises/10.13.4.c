@@ -1,16 +1,18 @@
 #include <stdio.h>
 #define SIZE 10
 
-int ind_of_max(double *arr, int len);
+int ind_of_max(double* arr, int len);
 
-int main() {
-    double darr[SIZE] = {23.3, 1, 45, 99, 2342.65, 5, 74, 456.1, 90, 49};
+int main()
+{
+    double darr[SIZE] = { 23.3, 1, 45, 99, 2342.65, 5, 74, 456.1, 90, 49 };
 
     printf("The index of largest num is %d\n", ind_of_max(iarr, SIZE));
     return 0;
 }
 
-int ind_of_max(double *arr, int len) {
+int ind_of_max(double* arr, int len)
+{
     int max = 0;
 
     for (int i = 1; i < len; i++) {
