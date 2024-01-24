@@ -4,7 +4,7 @@
 int ind_of_max(double *arr, int len);
 
 int main() {
-    double iarr[SIZE] = {23.3, 1, 45, 99, 2342.65, 5, 74, 456.1, 90, 49};
+    double darr[SIZE] = {23.3, 1, 45, 99, 2342.65, 5, 74, 456.1, 90, 49};
 
     printf("The index of largest num is %d\n", ind_of_max(iarr, SIZE));
     return 0;

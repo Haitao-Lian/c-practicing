@@ -3,7 +3,7 @@
 double max_diff(double *arr, int len);
 
 int main() {
-    double iarr[SIZE] = {23.3, 1, 45, 99, 2342.65, 5, 74, 456.1, 90, 49};
+    double darr[SIZE] = {23.3, 1, 45, 99, 2342.65, 5, 74, 456.1, 90, 49};
 
     printf("The difference between the largest and smallest: %4.2f\n",
            max_diff(iarr, SIZE));
