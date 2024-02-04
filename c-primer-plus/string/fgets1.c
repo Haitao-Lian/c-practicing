@@ -10,7 +10,7 @@ int main()
 
     printf("Your string twice (puts(), then fputs()):\n");
     puts(words); // 会补上一个回车
-    fputs(words, stdout); // 不会不上回车
+    fputs(words, stdout); // 不会补上回车
 
     puts("Enter another string, please.");
     fgets(words, STLEN, stdin);
