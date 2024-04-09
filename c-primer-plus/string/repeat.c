@@ -8,5 +8,7 @@ int main(int argc, char** argv)
     for (count = 1; count < argc; count++)
         printf("%d: %s\n", count, argv[count]);
     printf("\n");
+
+    printf("%zd\n", sizeof('$'));
     return 0;
 }
